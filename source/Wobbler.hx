@@ -17,6 +17,8 @@ class Wobbler extends FlxSprite {
 	public function new(velocityX:Float, velocityY:Float) {
 		super(FlxG.width * 0.5, FlxG.height * 0.5);
 		
+		antialiasing = true;
+		
 		makeGraphic(10, 10, colors[Std.int(Math.random() * colors.length)]);
 		
 		velocity.x = velocityX;

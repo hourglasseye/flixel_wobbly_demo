@@ -17,6 +17,8 @@ class PlayState extends FlxState {
 	override public function create():Void {
 		super.create();
 		
+		FlxG.camera.antialiasing = true;
+		
 		bgColor = FlxColor.CHARCOAL;
 		
 		var speed = 100;
