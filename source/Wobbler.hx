@@ -2,6 +2,7 @@ package ;
 
 import flixel.FlxG;
 import flixel.FlxSprite;
+import flixel.util.FlxAngle;
 import flixel.util.FlxColor;
 import flixel.util.FlxPoint;
 
@@ -23,6 +24,7 @@ class Wobbler extends FlxSprite {
 		
 		velocity.x = velocityX;
 		velocity.y = velocityY;
+		angle = Math.atan2(velocityY, velocityX) * FlxAngle.TO_DEG;
 	}
 	
 	override public function update():Void {
