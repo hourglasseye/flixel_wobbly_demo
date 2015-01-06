@@ -25,6 +25,8 @@ class Wobbler extends FlxSprite {
 		velocity.x = velocityX;
 		velocity.y = velocityY;
 		angle = Math.atan2(velocityY, velocityX) * FlxAngle.TO_DEG;
+		
+		pixelPerfectRender = false;
 	}
 	
 	override public function update():Void {
